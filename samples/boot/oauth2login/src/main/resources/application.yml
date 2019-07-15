@@ -19,8 +19,8 @@ spring:
             client-id: your-app-client-id
             client-secret: your-app-client-secret
           github:
-            client-id: your-app-client-id
-            client-secret: your-app-client-secret
+            client-id: 98a327bea3d8302a9450
+            client-secret: b0b4c24304cc3060d61933a24878bc3459b20f40
           facebook:
             client-id: your-app-client-id
             client-secret: your-app-client-secret

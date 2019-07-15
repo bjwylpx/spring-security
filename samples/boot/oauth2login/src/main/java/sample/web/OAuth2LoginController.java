@@ -30,6 +30,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class OAuth2LoginController {
 
+	/**
+	 *
+	 * @param model
+	 * @param authorizedClient 得到授权客户端的信息
+	 * @param oauth2User 得到当前登录的用户信息
+	 * @return
+	 */
 	@GetMapping("/")
 	public String index(Model model,
 						@RegisteredOAuth2AuthorizedClient OAuth2AuthorizedClient authorizedClient,
@@ -38,6 +45,17 @@ public class OAuth2LoginController {
 		model.addAttribute("userName", oauth2User.getName());
 		model.addAttribute("clientName", authorizedClient.getClientRegistration().getClientName());
 		model.addAttribute("userAttributes", oauth2User.getAttributes());
+		return "index";
+	}
+
+	/**
+	 * 所有的页面都需要验证后才可以访问。
+	 * 
+	 * @param model
+	 * @return
+	 */
+	@GetMapping("/xxx")
+	public String demo(Model model) {
 		return "index";
 	}
 }
