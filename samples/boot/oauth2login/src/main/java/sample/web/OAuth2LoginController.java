@@ -50,7 +50,10 @@ public class OAuth2LoginController {
 
 	/**
 	 * 所有的页面都需要验证后才可以访问。
-	 * 
+	 *
+	 * 要搞清楚，通过什么自动配置来完成对OAuth 2.0的设置呢？
+	 *
+	 *
 	 * @param model
 	 * @return
 	 */

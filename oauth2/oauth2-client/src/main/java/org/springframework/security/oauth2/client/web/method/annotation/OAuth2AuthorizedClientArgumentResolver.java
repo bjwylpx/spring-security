@@ -44,6 +44,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
+ * OAuth2AuthorizedClient的解析器，可通过实现{@link HandlerMethodArgumentResolver}来完成对参数的解析
+ *
  * An implementation of a {@link HandlerMethodArgumentResolver} that is capable
  * of resolving a method parameter to an argument value of type {@link OAuth2AuthorizedClient}.
  *
@@ -70,6 +72,8 @@ public final class OAuth2AuthorizedClientArgumentResolver implements HandlerMeth
 			new DefaultClientCredentialsTokenResponseClient();
 
 	/**
+	 * 构建函数何时调用？
+	 *
 	 * Constructs an {@code OAuth2AuthorizedClientArgumentResolver} using the provided parameters.
 	 *
 	 * @param clientRegistrationRepository the repository of client registrations
