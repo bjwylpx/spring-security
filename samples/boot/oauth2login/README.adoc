@@ -1,5 +1,7 @@
 = OAuth 2.0 Login Sample
 
+使用第三方来登录系统的功能。本示例中可以使用Google、Facebook等账号完成身份验证，登录到系统中。
+
 This guide provides instructions on setting up the sample application with OAuth 2.0 Login using an OAuth 2.0 Provider or OpenID Connect 1.0 Provider.
 The sample application uses Spring Boot 2.0.0.M6 and the `spring-security-oauth2-client` module which is new in Spring Security 5.0.
 
