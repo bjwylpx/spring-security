@@ -411,6 +411,11 @@ public class OAuth2LoginApplicationTests {
 	@ComponentScan(basePackages = "sample.web")
 	public static class SpringBootApplicationTestConfig {
 
+		/**
+		 * 自定义配置，没有使用自动配置
+		 * @param clientRegistrationRepository
+		 * @return
+		 */
 		@Bean
 		public OAuth2AuthorizedClientService authorizedClientService(ClientRegistrationRepository clientRegistrationRepository) {
 			return new InMemoryOAuth2AuthorizedClientService(clientRegistrationRepository);
