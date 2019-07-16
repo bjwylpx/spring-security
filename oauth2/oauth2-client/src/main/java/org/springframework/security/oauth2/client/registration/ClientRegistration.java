@@ -32,6 +32,7 @@ import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
 /**
+ * 表示client registration
  * A representation of a client registration with an OAuth 2.0 or OpenID Connect 1.0 Provider.
  *
  * @author Joe Grandja
@@ -264,6 +265,8 @@ public final class ClientRegistration implements Serializable {
 	}
 
 	/**
+	 * Builder的正确使用方式。 一般会放在具体创建者类中，为类的static class子类来使用。
+	 *
 	 * A builder for {@link ClientRegistration}.
 	 */
 	public static class Builder implements Serializable {
@@ -476,6 +479,8 @@ public final class ClientRegistration implements Serializable {
 		}
 
 		/**
+		 * 最后调用build()方法时才真正开始构建
+		 *
 		 * Builds a new {@link ClientRegistration}.
 		 *
 		 * @return a {@link ClientRegistration}

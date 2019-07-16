@@ -22,6 +22,8 @@ import org.springframework.security.oauth2.core.ClientAuthenticationMethod;
 import org.springframework.security.oauth2.core.oidc.IdTokenClaimNames;
 
 /**
+ * 枚举了常用的几种OAuth 2.0 provider.
+ *
  * Common OAuth2 Providers that can be used to create
  * {@link org.springframework.security.oauth2.client.registration.ClientRegistration.Builder
  * builders} pre-configured with sensible defaults.
